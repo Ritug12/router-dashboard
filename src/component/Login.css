@@ -1,0 +1,71 @@
+
+.htmlFor{
+    color: red;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    width: 84%;
+    display: flex;
+}
+.formStyle{
+    /* background-color: blue; */
+    /* background: 'url(//cdn.example.com/background.jpg)';
+    background-image:url("../../public/image.svg");
+        background-repeat: no-repeat; */
+        /* background-size: contain; */
+        /* height: 80vmin;
+  pointer-events: none; */
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+.tableStyle{
+    background-color: orange;
+}
+.inputfield{
+    border-radius: 12px;
+}
+.button{
+    color: aliceblue;
+    margin: 10px 10px 10px 10px;
+    font-size: 14px;
+    background-color: rebeccapurple;
+}
+
+.logoutbutton{
+    color: aliceblue;
+    height: 22px;
+    margin: 10px;
+    font-size: 14px;
+    background-color: rebeccapurple;
+}
+.logoutbutton:hover{
+    border-radius: 50px;
+    box-shadow: 15cm;
+}
+
+.button:hover{
+    background-color: red;
+    box-shadow: 15cm;
+}
+
+.logoutStyle{
+    display: flex;
+    justify-content: right;
+    height: 22px;
+    margin: 10px;
+    align-items: right;
+    font-size: 12px;
+    font-style: italic;
+    color: aquamarine;
+}
+.Contact-header {
+    background-color: #282c34;
+    /* background-image:url("../../public/image.svg"); */
+    min-height: 86vh;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
