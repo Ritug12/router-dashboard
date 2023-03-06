@@ -11,7 +11,18 @@ import Home from './component/Home';
 function App() {
   return (
     <div className='App'>
-    Hello, Please refer this as your main page. ignore the folder RouterComponent
+      <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<MainHeader />}>
+      <Route index element={<Home />} />
+      <Route path='/login' element={<div><Login /></div>} />
+      <Route path='/about' element={<div><About /></div>} />
+      <Route path='/contact' element={<div><Contact /></div>} />
+      <Route path='*' element={<Error />} />
+      </Route>
+    </Routes>
+    </BrowserRouter>
+    
     </div>
   );
 }
