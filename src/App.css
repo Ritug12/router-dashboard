@@ -5,7 +5,7 @@
 .App {
   text-align: left;
   /* float: left; */
-  justify-content: right;
+  justify-content: right; 
   /* display: flex; */
 }
 
