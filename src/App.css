@@ -6,7 +6,7 @@
   text-align: left;
   /* float: left; */
   justify-content: right;
-  /* display: flex; */
+  display: flex;
 }
 
 ul {
@@ -31,6 +31,13 @@ li {
 
 .active{
   color:yellow;
+}
+.sidebarcss{
+width: calc(76% + 22px);
+background:white;
+ border:1px solid transparent;
+   justify-content:center;
+   align-items:center;
 }
 
 .App-header {
@@ -72,4 +79,8 @@ a{
 }
 html, body, #app, #app>div {
   height: 100%
+}
+body{
+  background: lightgray;
+  margin: 10px;
 }
