@@ -1,8 +1,7 @@
 import React from "react";
-import { TableContainer,TableHead,TableBody,TableCell,TableRow, Paper,Table } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import './Login.css'
-import '../App.css'
+// import './Login.css'
+// import '../App.css'
 // function Contact(){
 const Contact =({allEntry, setIsLoggedIn})=>{
     const navigate = useNavigate();
