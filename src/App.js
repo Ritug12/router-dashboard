@@ -7,14 +7,15 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Login from './RouterComponent/component/Login';
 import Home from './RouterComponent/component/Home';
+import Search from './TopGrid/Search';
 
 
 function App() {
   return (
     <>
     <Grid container spacing={2} style={{marginTop:"1px", justifyContent:"center", alignItems:"center", border:"1px solid transparent", background:"white"}}>
-      <Grid sx={12}>
-        Top Grid
+      <Grid item sx>
+        <Search />
           </Grid>
       </Grid>
       <Grid container spacing={2} style={{marginTop:"5px", background:"transparent"}}>
