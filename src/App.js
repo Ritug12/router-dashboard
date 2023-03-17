@@ -8,6 +8,7 @@ import Sidebar from './Sidebar';
 import Login from './RouterComponent/component/Login';
 import Home from './RouterComponent/component/Home';
 import Search from './TopGrid/Search';
+import Tabss from './Tabs/Index';
 
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
       <Sidebar />
      
         </Grid>
-        <Grid sx={10} className="sidebarcss" >Side</Grid>
+        <Grid sx={10} className="sidebarcss" > <Tabss /></Grid>
+       
       </Grid>
       </>
     
