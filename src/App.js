@@ -10,12 +10,15 @@ import Home from './RouterComponent/component/Home';
 import Search from './TopGrid/Search';
 import Tabss from './Tabs/Index';
 import BasicTabs from './Tabs/Index';
+import FirstPage from './FirstPage';
+import UserLogin from './FirstPage/UserLogin';
 
 
 function App() {
   return (
     <>
-    <Grid container spacing={2} style={{marginTop:"1px", justifyContent:"center", alignItems:"center", border:"1px solid transparent", background:"white"}}>
+    <UserLogin />
+    {/* <Grid container spacing={2} style={{marginTop:"1px", justifyContent:"center", alignItems:"center", border:"1px solid transparent", background:"white"}}>
       <Grid item sx>
         <Search />
           </Grid>
@@ -27,7 +30,7 @@ function App() {
         </Grid>
         <Grid sx={10} className="sidebarcss" > <BasicTabs /></Grid>
        
-      </Grid>
+      </Grid> */}
       </>
     
   );
