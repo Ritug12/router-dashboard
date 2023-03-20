@@ -9,7 +9,7 @@ import Tab3 from "./Tab3";
 
 
 function TabPanel(props) {
-  const { children, value, index, ...other } = props;
+  const { children, value, index,} = props;
 
   return (
     <div>
@@ -46,7 +46,7 @@ function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <Tab1 />
+        <Tab1 setValue={setValue}/>
       </TabPanel>
       <TabPanel value={value} index={1}>
        <Tab2 />
