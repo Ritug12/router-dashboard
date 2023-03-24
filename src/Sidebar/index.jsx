@@ -21,8 +21,6 @@ function Sidebar() {
   const [menuCollapse, setMenuCollapse] = useState(false);
 
   const handleMenuClick = (page) => {
-    // Open the new page within the sidebar
-    // You can load the content of the new page dynamically here
     console.log(`Loading page: ${page}`);
   };
 
@@ -38,6 +36,10 @@ const Item = ({title,to}) => {
   return (
     <Box
     sx={{
+      "& .pro-sidebar" : {
+       minWidth:"190px",
+       width:"190px"
+    },
       "& .pro-sidebar-inner": {
         background: "white !important",
       },
@@ -61,8 +63,8 @@ const Item = ({title,to}) => {
     }
     }}
   >
-    <ProSidebar collapsed={menuCollapse}>
-      <Menu iconShape="square">
+    <ProSidebar>
+      <Menu>
         <MenuItem onClick={() => handleMenuClick("Page 1")}>
           Page 1
         </MenuItem>
