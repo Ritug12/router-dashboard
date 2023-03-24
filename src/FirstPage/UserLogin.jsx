@@ -41,7 +41,8 @@ const UserLogin =()=>{
             /></div>
 
             <div><button className="button" type="submit">UserLogin</button>
-            <button className="button" onClick={logOutButton}>SingUp</button></div>
+            {/* <button className="button" onClick={logOutButton}>SingUp</button> */}
+            </div>
         </form></div>
        
 {/* 
