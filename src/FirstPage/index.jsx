@@ -19,11 +19,12 @@ function FirstPage({ allEntry, setIsLoggedIn }) {
           background: "white",
         }}
       >
-        <Grid item sx={10}>
-          <Search />
-        </Grid>
+        
         <Grid item sx={2}>
           <span>Welcome {allEntry?.email}</span>
+        </Grid>
+        <Grid item sx={10}>
+          <Search />
         </Grid>
       </Grid>
       <Grid
