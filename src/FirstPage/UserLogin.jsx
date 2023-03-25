@@ -19,7 +19,7 @@ const UserLogin =()=>{
         console.log(allEntry);   
         setUserData(newEntry)    
         // setIsLoggedIn(true);
-        allEntry.length>0? setIsLoggedIn(true) : setIsLoggedIn(false)
+        allEntry.length ? setIsLoggedIn(true) : setIsLoggedIn(false)
         // navigate("/")
     }
 

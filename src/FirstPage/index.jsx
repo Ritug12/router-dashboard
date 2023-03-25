@@ -22,7 +22,7 @@ function FirstPage({ allEntry, setIsLoggedIn }) {
           <span>Welcome {allEntry?.email}</span>
         </Grid>
         <Grid item sx={2}>
-          <Search />
+          <Search setIsLoggedIn={setIsLoggedIn}/>
         </Grid>
       </Grid>
       <Grid
