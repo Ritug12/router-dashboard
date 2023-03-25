@@ -1,0 +1,50 @@
+[
+  {
+    "make": "Toyota",
+    "model": "Celica",
+    "id": "Mondeo",
+    "price": 35000
+  },
+  {
+    "make": "Ford",
+    "model": "Mondeo",
+    "id": "Mondeo",
+    "price": 32000
+  },
+  {
+    "make": "Porsche",
+    "model": "Boxster",
+    "id": "Mondeo",
+    "price": 72000
+  },
+  {
+    "make": "Toyota",
+    "model": "Celica",
+    "id": "Mondeo",
+    "price": 35000
+  },
+  {
+    "make": "Ford",
+    "model": "Mondeo",
+    "id": "Mondeo",
+    "price": 32000
+  },
+  {
+    "make": "Toyota",
+    "model": "Celica",
+    "id": "Mondeo",
+    "price": 35000
+  },
+  {
+    "make": "Ford",
+    "model": "Mondeo",
+    "id": "Mondeo",
+    "price": 32000
+  },
+  {
+    "make": "Ford",
+    "model": "Mondeo",
+    "id": "Mondeo",
+    "price": 32000
+  }
+]
