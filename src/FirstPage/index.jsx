@@ -10,46 +10,33 @@ function FirstPage({ allEntry, setIsLoggedIn }) {
     <>
       <Grid
         container
-        spacing={2}
+        spacing={1}
         style={{
-          marginTop: "1px",
+          marginTop: "1px", width:"100%",
           border: "1px solid transparent",
-          background: "white",
+          background: "white", marginLeft:"1px"
         }}
       >
         
-        <Grid item sx={2} >
-          <span style={{ display: 'flex', justifyContent: 'flex-end' }}>Welcome {allEntry?.email}</span>
+        <Grid item sx={8} style={{marginRight:"10px"}}>
+          <span>Welcome {allEntry?.email}</span>
         </Grid>
-        <Grid item sx={10}>
-          <Search setIsLoggedIn={setIsLoggedIn}/>
+        <Grid item sx={2}>
+          <Search />
         </Grid>
       </Grid>
       <Grid
         container
-        spacing={4}
+        spacing={1}
         style={{ marginTop: "5px", background: "transparent" }}>
-        <Grid item sx={2} style={{ background: "white", marginRight: "10px" }}>
+        <Grid item sx={2} style={{ background: "white", marginRight: "9px", marginLeft:"9px" }}>
           <Sidebar />
         </Grid>
         <Grid item sx={12} className="sidebarcss">
           <BasicTabs />
         </Grid>
       </Grid>
-      <Grid
-        container
-        spacing={2}
-        style={{
-          marginTop: "5px",
-          background: "transparent",
-          alignItems: "right",
-          justifyContent: "right",
-        }}
-      >
-        <Grid item sx>
-         
-        </Grid>
-      </Grid>
+      
     </>
   );
 }

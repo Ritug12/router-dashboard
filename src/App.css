@@ -40,7 +40,7 @@ li {
   color:yellow;
 }
 .sidebarcss{
-width: calc(76% + 22px);
+width: calc(80% + 34px);
 background:white;
  border:1px solid transparent;
    justify-content:center;
