@@ -5,9 +5,7 @@ import Search from "../TopGrid/Search";
 import BasicTabs from "../Tabs/Index";
 
 function FirstPage({ allEntry, setIsLoggedIn }) {
-  const onLogoutClick = (e) => {
-    setIsLoggedIn(false);
-  };
+ 
   return (
     <>
       <Grid
@@ -20,21 +18,21 @@ function FirstPage({ allEntry, setIsLoggedIn }) {
         }}
       >
         
-        <Grid item sx={2}>
-          <span>Welcome {allEntry?.email}</span>
+        <Grid item sx={2} >
+          <span style={{ display: 'flex', justifyContent: 'flex-end' }}>Welcome {allEntry?.email}</span>
         </Grid>
         <Grid item sx={10}>
-          <Search />
+          <Search setIsLoggedIn={setIsLoggedIn}/>
         </Grid>
       </Grid>
       <Grid
         container
-        spacing={2}
+        spacing={4}
         style={{ marginTop: "5px", background: "transparent" }}>
         <Grid item sx={2} style={{ background: "white", marginRight: "10px" }}>
           <Sidebar />
         </Grid>
-        <Grid item sx={10} className="sidebarcss">
+        <Grid item sx={12} className="sidebarcss">
           <BasicTabs />
         </Grid>
       </Grid>
@@ -49,9 +47,7 @@ function FirstPage({ allEntry, setIsLoggedIn }) {
         }}
       >
         <Grid item sx>
-          <button onClick={onLogoutClick} className="logoutbutton">
-            Logout
-          </button>
+         
         </Grid>
       </Grid>
     </>

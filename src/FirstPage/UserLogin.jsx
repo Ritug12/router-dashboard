@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import FirstPage from ".";
 // import "./Login.css";
-// import '../App.css'
+import '../App.css';
+
 
 const UserLogin =()=>{
     const[email,setEmail]=useState("");
@@ -32,11 +33,11 @@ const UserLogin =()=>{
         <div className="formStyle">
         <form action="" onSubmit={submitForm}>
            <div> <label className="htmlFor" htmlFor="email">Email</label>
-            <input className="inputfield" type="name" name="name" id="name" autoComplete="off" value={email}
+            <input className="inputfield" type="name" name="name" id="name" autoComplete="off" value={email} required
             onChange={(e)=>setEmail(e.target.value)}
             /></div>
             <div> <label className="htmlFor" htmlFor="password">Password</label>
-            <input className="inputfield" name="password" id="password" type="password" autoComplete="off" value={password}
+            <input className="inputfield" name="password" id="password" type="password" autoComplete="off" value={password} required
             onChange={(e)=>setPassword(e.target.value)}
             /></div>
 
