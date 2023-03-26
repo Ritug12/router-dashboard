@@ -5,55 +5,38 @@ import Search from "../TopGrid/Search";
 import BasicTabs from "../Tabs/Index";
 
 function FirstPage({ allEntry, setIsLoggedIn }) {
-  const onLogoutClick = (e) => {
-    setIsLoggedIn(false);
-  };
+ 
   return (
     <>
       <Grid
         container
-        spacing={2}
+        spacing={1}
         style={{
-          marginTop: "1px",
+          marginTop: "1px", width:"100%",
           border: "1px solid transparent",
-          background: "white",
+          background: "white", marginLeft:"1px"
         }}
       >
         
-        <Grid item sx={2}>
+        <Grid item sx={8} style={{marginRight:"10px"}}>
           <span>Welcome {allEntry?.email}</span>
         </Grid>
-        <Grid item sx={10}>
-          <Search />
+        <Grid item sx={2}>
+          <Search setIsLoggedIn={setIsLoggedIn}/>
         </Grid>
       </Grid>
       <Grid
         container
-        spacing={2}
+        spacing={1}
         style={{ marginTop: "5px", background: "transparent" }}>
-        <Grid item sx={2} style={{ background: "white", marginRight: "10px" }}>
+        <Grid item sx={2} style={{ background: "white", marginRight: "9px", marginLeft:"9px" }}>
           <Sidebar />
         </Grid>
-        <Grid item sx={10} className="sidebarcss">
+        <Grid item sx={12} className="sidebarcss">
           <BasicTabs />
         </Grid>
       </Grid>
-      <Grid
-        container
-        spacing={2}
-        style={{
-          marginTop: "5px",
-          background: "transparent",
-          alignItems: "right",
-          justifyContent: "right",
-        }}
-      >
-        <Grid item sx>
-          <button onClick={onLogoutClick} className="logoutbutton">
-            Logout
-          </button>
-        </Grid>
-      </Grid>
+      
     </>
   );
 }

@@ -18,7 +18,7 @@ const UserLogin =()=>{
         console.log(allEntry);  
         setUserData(newEntry)    
         // setIsLoggedIn(true);
-        allEntry.length>0? setIsLoggedIn(true) : setIsLoggedIn(false)
+        allEntry.length ? setIsLoggedIn(true) : setIsLoggedIn(false)
         // navigate("/")
     };
 
@@ -42,12 +42,12 @@ const UserLogin =()=>{
            </div> */}
            <div> 
                 {/* <label className="htmlFor" htmlFor="email">Email</label> */}
-                <input className="inputfield" type="email" name="email"  placeholder="Email" id="email" autoComplete="off" value={email}
+                <input className="inputfield" type="email" name="email"  placeholder="Email" id="email" autoComplete="off" value={email} required
                  onChange={(e)=>setEmail(e.target.value)}/>
            </div>
            <div> 
                 {/* <label className="htmlFor" htmlFor="password">Password</label> */}
-                <input className="inputfield" name="password" id="password" type="password" placeholder="Password" autoComplete="off" value={password}
+                <input className="inputfield" name="password" id="password" type="password" placeholder="Password" autoComplete="off" value={password} required
                  onChange={(e)=>setPassword(e.target.value)}/>
            </div>
             <div class="btn-field">

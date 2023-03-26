@@ -23,6 +23,13 @@ li {
   pointer-events: none;
 }
 
+.inputfield{
+ color: aqua;
+ border-radius: 10%;
+
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -33,7 +40,7 @@ li {
   color:yellow;
 }
 .sidebarcss{
-width: calc(76% + 22px);
+width: calc(80% + 34px);
 background:white;
  border:1px solid transparent;
    justify-content:center;
